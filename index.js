@@ -19,7 +19,6 @@ module.exports = app => {
     // GET https://api.travis-ci.org/v3/job/398496343/log.txt
 
     // Remove node terminal formatting
-
   })
   app.on('pull_request.synchronize', async context => {
     // app.log('synchronize', context)

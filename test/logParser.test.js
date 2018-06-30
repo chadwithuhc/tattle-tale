@@ -20,9 +20,9 @@ test('logParser returns a successful GET request', (done) => {
 })
 
 test('logParser rejects on missing URL', () => {
-  expect(logParser()).rejects.toMatchObject({
+  expect(logParser()).rejects.toThrow(new Error({
     error: {
       message: `No URL provided`
     }
-  })
+  }))
 })
