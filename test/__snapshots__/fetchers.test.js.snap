@@ -1,6 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`fetchers.findPullBySha() resolves with matching pull 1`] = `
+exports[`fetchers .buildLog() returns a successful GET request 1`] = `
+"$ npm test
+
+> json-parser@1.0.0 test /home/travis/build/chadwithuhc/json-parser-code-challenge
+> mocha
+
+
+
+  Write a JSON Parser
+    ✓ has a .parse() method
+    ✓ supports array of numbers
+    ✓ supports array of strings
+    ✓ supports array of numbers and strings
+    ✓ supports objects with properties
+    1) supports nested objects
+
+
+  5 passing (15ms)
+  1 failing
+
+  1) Write a JSON Parser
+       supports nested objects:
+     TypeError: Cannot read property 'trim' of undefined
+      at JSONParser.autoParse (parser.js:8:15)
+      at JSONParser.parseKeyValue (parser.js:79:37)
+      at stripEndCharacters.split.reduce (parser.js:70:33)
+      at Array.reduce (<anonymous>)
+      at JSONParser.parseObject (parser.js:69:8)
+      at JSONParser.autoParse (parser.js:14:21)
+      at JSONParser.parseKeyValue (parser.js:79:37)
+      at stripEndCharacters.split.reduce (parser.js:70:33)
+      at Array.reduce (<anonymous>)
+      at JSONParser.parseObject (parser.js:69:8)
+      at JSONParser.autoParse (parser.js:14:21)
+      at JSONParser.parse (parser.js:4:17)
+      at Context.it (test.js:60:25)
+
+
+
+npm ERR! Test failed.  See above for more details."
+`;
+
+exports[`fetchers .findPullBySha() resolves with matching pull 1`] = `
 Object {
   "_links": Object {
     "comments": Object {

@@ -1,5 +1,4 @@
-const logParser = require('./lib/logParser')
-const extractBuildId = require('./lib/extract')
+const extract = require('./lib/extract')
 const fetchers = require('./lib/fetchers')
 
 /**
@@ -11,9 +10,9 @@ module.exports = app => {
     if (context.payload.state === 'failure') {
       // context.payload.target_url ->
       // https://travis-ci.org/chadwithuhc/json-parser-code-challenge/builds/398496342?utm_source=github_status&utm_medium=notification
-      const buildId = extractBuildId(context.payload.target_url)
+      const buildId = extract.buildIdFromUrl(context.payload.target_url)
 
-      return logParser(`https://api.travis-ci.org/v3/job/${buildId + 1}/log.txt`)
+      return fetchers.buildLog(buildId + 1)
         .then(log => {
           const { commit, repository } = context.payload
 

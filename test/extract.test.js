@@ -1,18 +1,22 @@
-const extractBuildId = require('../lib/extract')
+const extract = require('../lib/extract')
 const dummyUrl = `https://travis-ci.org/chadwithuhc/json-parser-code-challenge/builds/398496342?utm_source=github_status&utm_medium=notification`
 
-test('extract is a function', () => {
-  expect(typeof extractBuildId).toBe(`function`)
-})
+describe('extract', () => {
+  describe('.buildIdFromUrl()', () => {
+    test('is a function', () => {
+      expect(typeof extract.buildIdFromUrl).toBe(`function`)
+    })
 
-test('extract correctly grabs the build id', () => {
-  expect(extractBuildId(dummyUrl)).toBe(398496342)
-})
+    test('correctly grabs the build id', () => {
+      expect(extract.buildIdFromUrl(dummyUrl)).toBe(398496342)
+    })
 
-test('extract returns null when no URL provided', () => {
-  expect(extractBuildId()).toBe(null)
-})
+    test('returns null when no URL provided', () => {
+      expect(extract.buildIdFromUrl()).toBe(null)
+    })
 
-test('extract returns null when URL does not contain number', () => {
-  expect(extractBuildId(`https://google.com`)).toBe(null)
+    test('returns null when URL does not contain number', () => {
+      expect(extract.buildIdFromUrl(`https://google.com`)).toBe(null)
+    })
+  })
 })
