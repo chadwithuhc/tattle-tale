@@ -1,6 +1,6 @@
 const logParser = require('./lib/logParser')
-
-const fetch = require('node-fetch')
+const extractBuildId = require('./lib/extract')
+const fetchers = require('./lib/fetchers')
 
 /**
  * This is the entry point for your Probot App.
@@ -9,27 +9,16 @@ const fetch = require('node-fetch')
 module.exports = app => {
   app.on('status', async context => {
     if (context.payload.state === 'failure') {
-      console.log('FAIL!')
-
+      // context.payload.target_url ->
       // https://travis-ci.org/chadwithuhc/json-parser-code-challenge/builds/398496342?utm_source=github_status&utm_medium=notification
-      const buildId = +(new URL(context.payload.target_url)).pathname.split(`/`).pop()
+      const buildId = extractBuildId(context.payload.target_url)
 
-      logParser(`https://api.travis-ci.org/v3/job/${buildId + 1}/log.txt`)
+      return logParser(`https://api.travis-ci.org/v3/job/${buildId + 1}/log.txt`)
         .then(log => {
           const { commit, repository } = context.payload
 
-          // GET pulls
-          // match where pull.head.sha === commit.sha
-          fetch(repository.pulls_url.replace(`{/number}`, ``))
-            .then(res => res.json())
-            .then(pulls => {
-              const pull = pulls.find(pull => pull.head.sha === commit.sha)
-
-              if (!pull) {
-                console.log('ERR: Pull not found')
-                return
-              }
-
+          return fetchers.findPullBySha(repository.pulls_url, commit.sha)
+            .then(pull => {
               const comment = context.issue({
                 number: pull.number,
                 body: [
