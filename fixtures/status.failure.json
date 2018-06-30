@@ -4,46 +4,46 @@
   "accept": "*/*",
   "user-agent": "GitHub-Hookshot/22e0d92",
   "x-github-event": "status",
-  "x-github-delivery": "35d62e46-7c23-11e8-9c28-131387d98409",
+  "x-github-delivery": "4bf7f05c-7c9f-11e8-9c89-a1a585af6c61",
   "content-type": "application/json",
-  "x-hub-signature": "sha1=64d74580a0528d81ef96dbc4fd13fb17f93daa85",
-  "x-request-id": "ef5fcb57-ca92-4f8c-8a90-9760614e5652",
-  "x-forwarded-for": "192.30.252.37",
+  "x-hub-signature": "sha1=1a60c283c09a176ac4d59588ee04fe08331b23aa",
+  "x-request-id": "106f00a1-b283-4901-8b55-3d4e672ae87c",
+  "x-forwarded-for": "192.30.252.39",
   "x-forwarded-proto": "https",
   "x-forwarded-port": "443",
   "via": "1.1 vegur",
   "connect-time": "0",
-  "x-request-start": "1530335130477",
+  "x-request-start": "1530388425222",
   "total-route-time": "0",
-  "content-length": "10770",
+  "content-length": "10779",
   "body": {
-    "id": 5153820175,
-    "sha": "83d6439d3c48b53beaf38edaaedc70a5155b7c06",
+    "id": 5154541817,
+    "sha": "e05c7240a5321e41ea39db5759f3552536dc0ffa",
     "name": "chadwithuhc/json-parser-code-challenge",
-    "target_url": "https://travis-ci.org/chadwithuhc/json-parser-code-challenge/builds/398508196?utm_source=github_status&utm_medium=notification",
+    "target_url": "https://travis-ci.org/chadwithuhc/json-parser-code-challenge/builds/398656991?utm_source=github_status&utm_medium=notification",
     "context": "continuous-integration/travis-ci/pr",
     "description": "The Travis CI build failed",
     "state": "failure",
     "commit": {
-      "sha": "83d6439d3c48b53beaf38edaaedc70a5155b7c06",
-      "node_id": "MDY6Q29tbWl0MTMyNTQ0MzgzOjgzZDY0MzlkM2M0OGI1M2JlYWYzOGVkYWFlZGM3MGE1MTU1YjdjMDY=",
+      "sha": "e05c7240a5321e41ea39db5759f3552536dc0ffa",
+      "node_id": "MDY6Q29tbWl0MTMyNTQ0MzgzOmUwNWM3MjQwYTUzMjFlNDFlYTM5ZGI1NzU5ZjM1NTI1MzZkYzBmZmE=",
       "commit": {
         "author": {
           "name": "chadwithuhc",
           "email": "chadwithuhc@gmail.com",
-          "date": "2018-06-30T04:50:37Z"
+          "date": "2018-06-30T19:48:45Z"
         },
         "committer": {
           "name": "chadwithuhc",
           "email": "chadwithuhc@gmail.com",
-          "date": "2018-06-30T04:50:37Z"
+          "date": "2018-06-30T19:48:45Z"
         },
-        "message": "Continue failing for meow",
+        "message": "Adding nested value testing",
         "tree": {
-          "sha": "36fe4f4e6f72c2f73832fac64e1b9d80f2d98eb8",
-          "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/git/trees/36fe4f4e6f72c2f73832fac64e1b9d80f2d98eb8"
+          "sha": "0065b73851077209068c7c36be75d2b96c2b969b",
+          "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/git/trees/0065b73851077209068c7c36be75d2b96c2b969b"
         },
-        "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/git/commits/83d6439d3c48b53beaf38edaaedc70a5155b7c06",
+        "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/git/commits/e05c7240a5321e41ea39db5759f3552536dc0ffa",
         "comment_count": 0,
         "verification": {
           "verified": false,
@@ -52,9 +52,9 @@
           "payload": null
         }
       },
-      "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/83d6439d3c48b53beaf38edaaedc70a5155b7c06",
-      "html_url": "https://github.com/chadwithuhc/json-parser-code-challenge/commit/83d6439d3c48b53beaf38edaaedc70a5155b7c06",
-      "comments_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/83d6439d3c48b53beaf38edaaedc70a5155b7c06/comments",
+      "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/e05c7240a5321e41ea39db5759f3552536dc0ffa",
+      "html_url": "https://github.com/chadwithuhc/json-parser-code-challenge/commit/e05c7240a5321e41ea39db5759f3552536dc0ffa",
+      "comments_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/e05c7240a5321e41ea39db5759f3552536dc0ffa/comments",
       "author": {
         "login": "chadwithuhc",
         "id": 259196,
@@ -96,20 +96,20 @@
         "site_admin": false
       },
       "parents": [{
-        "sha": "ae907c0e3823fa5ea3bdb30a6c9bad691bdb6496",
-        "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/ae907c0e3823fa5ea3bdb30a6c9bad691bdb6496",
-        "html_url": "https://github.com/chadwithuhc/json-parser-code-challenge/commit/ae907c0e3823fa5ea3bdb30a6c9bad691bdb6496"
+        "sha": "a17af7693b1e2f3f56c918f9949626eb2fd41a7c",
+        "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/a17af7693b1e2f3f56c918f9949626eb2fd41a7c",
+        "html_url": "https://github.com/chadwithuhc/json-parser-code-challenge/commit/a17af7693b1e2f3f56c918f9949626eb2fd41a7c"
       }]
     },
     "branches": [{
-      "name": "pr-test",
+      "name": "nested-testing",
       "commit": {
-        "sha": "83d6439d3c48b53beaf38edaaedc70a5155b7c06",
-        "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/83d6439d3c48b53beaf38edaaedc70a5155b7c06"
+        "sha": "e05c7240a5321e41ea39db5759f3552536dc0ffa",
+        "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/commits/e05c7240a5321e41ea39db5759f3552536dc0ffa"
       }
     }],
-    "created_at": "2018-06-30T05:05:30+00:00",
-    "updated_at": "2018-06-30T05:05:30+00:00",
+    "created_at": "2018-06-30T19:53:45+00:00",
+    "updated_at": "2018-06-30T19:53:45+00:00",
     "repository": {
       "id": 132544383,
       "node_id": "MDEwOlJlcG9zaXRvcnkxMzI1NDQzODM=",
@@ -178,7 +178,7 @@
       "deployments_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/deployments",
       "created_at": "2018-05-08T02:46:53Z",
       "updated_at": "2018-06-30T01:31:23Z",
-      "pushed_at": "2018-06-30T05:04:51Z",
+      "pushed_at": "2018-06-30T19:53:07Z",
       "git_url": "git://github.com/chadwithuhc/json-parser-code-challenge.git",
       "ssh_url": "git@github.com:chadwithuhc/json-parser-code-challenge.git",
       "clone_url": "https://github.com/chadwithuhc/json-parser-code-challenge.git",
@@ -224,8 +224,8 @@
       "site_admin": false
     },
     "installation": {
-      "id": 227801
+      "id": 228156
     }
   },
-  "timestamp": 1530335130474
+  "timestamp": 1530388425224
 }

@@ -1,5 +1,5 @@
 const extract = require('../lib/extract')
-const dummyUrl = `https://travis-ci.org/chadwithuhc/json-parser-code-challenge/builds/398496342?utm_source=github_status&utm_medium=notification`
+const dummyUrl = `https://travis-ci.org/chadwithuhc/json-parser-code-challenge/builds/398656240?utm_source=github_status&utm_medium=notification`
 
 describe('extract', () => {
   describe('.buildIdFromUrl()', () => {
@@ -8,7 +8,7 @@ describe('extract', () => {
     })
 
     test('correctly grabs the build id', () => {
-      expect(extract.buildIdFromUrl(dummyUrl)).toBe(398496342)
+      expect(extract.buildIdFromUrl(dummyUrl)).toBe(398656240)
     })
 
     test('returns null when no URL provided', () => {

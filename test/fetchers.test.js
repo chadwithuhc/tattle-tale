@@ -10,7 +10,7 @@ fetchers.pulls = jest.fn().mockReturnValue(Promise.resolve(pullsFixture))
 
 describe('fetchers', () => {
   const dummyPullsUrl = `https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls{/number}`
-  const dummySha = `83d6439d3c48b53beaf38edaaedc70a5155b7c06`
+  const dummySha = pullsFixture[0].head.sha
   const badSha = dummySha.substr(3)
   const failedResult = fetchers.findPullBySha(dummyPullsUrl, badSha)
   const resolvedResult = fetchers.findPullBySha(dummyPullsUrl, dummySha)
@@ -48,7 +48,7 @@ describe('fetchers', () => {
   })
 
   describe('.buildLog()', () => {
-    const dummyBuildId = 398495386
+    const dummyBuildId = 398656241
     const logResult = fetchers.buildLog(dummyBuildId)
 
     test('is a function', () => {

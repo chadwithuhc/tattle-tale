@@ -17,7 +17,7 @@ exports[`fetchers .buildLog() returns a successful GET request 1`] = `
     1) supports nested objects
 
 
-  5 passing (15ms)
+  5 passing (16ms)
   1 failing
 
   1) Write a JSON Parser
@@ -46,36 +46,36 @@ exports[`fetchers .findPullBySha() resolves with matching pull 1`] = `
 Object {
   "_links": Object {
     "comments": Object {
-      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/4/comments",
+      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/5/comments",
     },
     "commits": Object {
-      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/4/commits",
+      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/5/commits",
     },
     "html": Object {
-      "href": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/4",
+      "href": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/5",
     },
     "issue": Object {
-      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/4",
+      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/5",
     },
     "review_comment": Object {
       "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/comments{/number}",
     },
     "review_comments": Object {
-      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/4/comments",
+      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/5/comments",
     },
     "self": Object {
-      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/4",
+      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/5",
     },
     "statuses": Object {
-      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/statuses/83d6439d3c48b53beaf38edaaedc70a5155b7c06",
+      "href": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/statuses/e05c7240a5321e41ea39db5759f3552536dc0ffa",
     },
   },
   "assignee": null,
   "assignees": Array [],
   "author_association": "OWNER",
   "base": Object {
-    "label": "chadwithuhc:travis-ci",
-    "ref": "travis-ci",
+    "label": "chadwithuhc:master",
+    "ref": "master",
     "repo": Object {
       "archive_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/{archive_format}{/ref}",
       "archived": false,
@@ -151,7 +151,7 @@ Object {
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls{/number}",
-      "pushed_at": "2018-06-30T06:22:02Z",
+      "pushed_at": "2018-06-30T19:53:07Z",
       "releases_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/releases{/id}",
       "size": 5,
       "ssh_url": "git@github.com:chadwithuhc/json-parser-code-challenge.git",
@@ -169,7 +169,7 @@ Object {
       "watchers": 0,
       "watchers_count": 0,
     },
-    "sha": "33808abb2f03828fae70e3b06273558b5988cd66",
+    "sha": "a17af7693b1e2f3f56c918f9949626eb2fd41a7c",
     "user": Object {
       "avatar_url": "https://avatars2.githubusercontent.com/u/259196?v=4",
       "events_url": "https://api.github.com/users/chadwithuhc/events{/privacy}",
@@ -191,15 +191,15 @@ Object {
       "url": "https://api.github.com/users/chadwithuhc",
     },
   },
-  "body": "Long body text",
+  "body": "Additional tests for the next stage in the challenge",
   "closed_at": null,
-  "comments_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/4/comments",
-  "commits_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/4/commits",
-  "created_at": "2018-06-30T06:22:01Z",
-  "diff_url": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/4.diff",
+  "comments_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/5/comments",
+  "commits_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/5/commits",
+  "created_at": "2018-06-30T19:53:07Z",
+  "diff_url": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/5.diff",
   "head": Object {
-    "label": "chadwithuhc:pr-test",
-    "ref": "pr-test",
+    "label": "chadwithuhc:nested-testing",
+    "ref": "nested-testing",
     "repo": Object {
       "archive_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/{archive_format}{/ref}",
       "archived": false,
@@ -275,7 +275,7 @@ Object {
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls{/number}",
-      "pushed_at": "2018-06-30T06:22:02Z",
+      "pushed_at": "2018-06-30T19:53:07Z",
       "releases_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/releases{/id}",
       "size": 5,
       "ssh_url": "git@github.com:chadwithuhc/json-parser-code-challenge.git",
@@ -293,7 +293,7 @@ Object {
       "watchers": 0,
       "watchers_count": 0,
     },
-    "sha": "83d6439d3c48b53beaf38edaaedc70a5155b7c06",
+    "sha": "e05c7240a5321e41ea39db5759f3552536dc0ffa",
     "user": Object {
       "avatar_url": "https://avatars2.githubusercontent.com/u/259196?v=4",
       "events_url": "https://api.github.com/users/chadwithuhc/events{/privacy}",
@@ -315,26 +315,26 @@ Object {
       "url": "https://api.github.com/users/chadwithuhc",
     },
   },
-  "html_url": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/4",
-  "id": 198462470,
-  "issue_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/4",
+  "html_url": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/5",
+  "id": 198491739,
+  "issue_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/issues/5",
   "labels": Array [],
   "locked": false,
-  "merge_commit_sha": "38e7059ed8819afa8fc4f6765c701aaa01176cc7",
+  "merge_commit_sha": "1378cf03923e853303b4c87274f5abe37ca660cf",
   "merged_at": null,
   "milestone": null,
-  "node_id": "MDExOlB1bGxSZXF1ZXN0MTk4NDYyNDcw",
-  "number": 4,
-  "patch_url": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/4.patch",
+  "node_id": "MDExOlB1bGxSZXF1ZXN0MTk4NDkxNzM5",
+  "number": 5,
+  "patch_url": "https://github.com/chadwithuhc/json-parser-code-challenge/pull/5.patch",
   "requested_reviewers": Array [],
   "requested_teams": Array [],
   "review_comment_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/comments{/number}",
-  "review_comments_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/4/comments",
+  "review_comments_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/5/comments",
   "state": "open",
-  "statuses_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/statuses/83d6439d3c48b53beaf38edaaedc70a5155b7c06",
-  "title": "PR Test 3",
-  "updated_at": "2018-06-30T16:44:30Z",
-  "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/4",
+  "statuses_url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/statuses/e05c7240a5321e41ea39db5759f3552536dc0ffa",
+  "title": "Adding nested value testing",
+  "updated_at": "2018-06-30T19:54:48Z",
+  "url": "https://api.github.com/repos/chadwithuhc/json-parser-code-challenge/pulls/5",
   "user": Object {
     "avatar_url": "https://avatars2.githubusercontent.com/u/259196?v=4",
     "events_url": "https://api.github.com/users/chadwithuhc/events{/privacy}",

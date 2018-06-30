@@ -1,17 +1,17 @@
 travis_fold:start:worker_info
 [0K[33;1mWorker information[0m
-hostname: c6438b68-8564-4290-9e88-1b2c50a7968c@1.i-0f51f08-production-2-worker-org-ec2.travisci.net
+hostname: d68dc0a6-fa3d-4864-9718-f6f0359602f1@1.i-0857422-production-2-worker-org-ec2.travisci.net
 version: v3.8.2 https://github.com/travis-ci/worker/tree/c370f713bb4195cce20cdc6ce3e62f26b8cf3961
-instance: f756d00 travisci/ci-garnet:packer-1512502276-986baf0 (via amqp)
-startup: 2.674020738s
+instance: 845a8ae travisci/ci-garnet:packer-1512502276-986baf0 (via amqp)
+startup: 563.706498ms
 travis_fold:end:worker_info
 [0Ktravis_fold:start:system_info
 [0K[33;1mBuild system information[0m
 Build language: node_js
 Build group: stable
 Build dist: trusty
-Build id: 398506690
-Job id: 398506691
+Build id: 398656240
+Job id: 398656241
 Runtime kernel version: 4.14.12-041412-generic
 travis-build version: e2813f549
 [34m[1mBuild image provisioning date and time[0m
@@ -409,96 +409,61 @@ travis_fold:end:system_info
 
 
 travis_fold:start:git.checkout
-[0Ktravis_time:start:0a96b2d0
-[0K$ git clone --depth=50 https://github.com/chadwithuhc/json-parser-code-challenge.git chadwithuhc/json-parser-code-challenge
+[0Ktravis_time:start:05878fb8
+[0K$ git clone --depth=50 --branch=nested-testing https://github.com/chadwithuhc/json-parser-code-challenge.git chadwithuhc/json-parser-code-challenge
 Cloning into 'chadwithuhc/json-parser-code-challenge'...
-remote: Counting objects: 22, done.[K
-remote: Compressing objects:   7% (1/14)   [K
-remote: Compressing objects:  14% (2/14)   [K
-remote: Compressing objects:  21% (3/14)   [K
-remote: Compressing objects:  28% (4/14)   [K
-remote: Compressing objects:  35% (5/14)   [K
-remote: Compressing objects:  42% (6/14)   [K
-remote: Compressing objects:  50% (7/14)   [K
-remote: Compressing objects:  57% (8/14)   [K
-remote: Compressing objects:  64% (9/14)   [K
-remote: Compressing objects:  71% (10/14)   [K
-remote: Compressing objects:  78% (11/14)   [K
-remote: Compressing objects:  85% (12/14)   [K
-remote: Compressing objects:  92% (13/14)   [K
-remote: Compressing objects: 100% (14/14)   [K
-remote: Compressing objects: 100% (14/14), done.[K
-remote: Total 22 (delta 5), reused 22 (delta 5), pack-reused 0[K
-Unpacking objects:   4% (1/22)
-Unpacking objects:   9% (2/22)
-Unpacking objects:  13% (3/22)
-Unpacking objects:  18% (4/22)
-Unpacking objects:  22% (5/22)
-Unpacking objects:  27% (6/22)
-Unpacking objects:  31% (7/22)
-Unpacking objects:  36% (8/22)
-Unpacking objects:  40% (9/22)
-Unpacking objects:  45% (10/22)
-Unpacking objects:  50% (11/22)
-Unpacking objects:  54% (12/22)
-Unpacking objects:  59% (13/22)
-Unpacking objects:  63% (14/22)
-Unpacking objects:  68% (15/22)
-Unpacking objects:  72% (16/22)
-Unpacking objects:  77% (17/22)
-Unpacking objects:  81% (18/22)
-Unpacking objects:  86% (19/22)
-Unpacking objects:  90% (20/22)
-Unpacking objects:  95% (21/22)
-Unpacking objects: 100% (22/22)
-Unpacking objects: 100% (22/22), done.
+remote: Counting objects: 24, done.[K
+remote: Compressing objects:   6% (1/15)   [K
+remote: Compressing objects:  13% (2/15)   [K
+remote: Compressing objects:  20% (3/15)   [K
+remote: Compressing objects:  26% (4/15)   [K
+remote: Compressing objects:  33% (5/15)   [K
+remote: Compressing objects:  40% (6/15)   [K
+remote: Compressing objects:  46% (7/15)   [K
+remote: Compressing objects:  53% (8/15)   [K
+remote: Compressing objects:  60% (9/15)   [K
+remote: Compressing objects:  66% (10/15)   [K
+remote: Compressing objects:  73% (11/15)   [K
+remote: Compressing objects:  80% (12/15)   [K
+remote: Compressing objects:  86% (13/15)   [K
+remote: Compressing objects:  93% (14/15)   [K
+remote: Compressing objects: 100% (15/15)   [K
+remote: Compressing objects: 100% (15/15), done.[K
+remote: Total 24 (delta 6), reused 24 (delta 6), pack-reused 0[K
+Unpacking objects:   4% (1/24)
+Unpacking objects:   8% (2/24)
+Unpacking objects:  12% (3/24)
+Unpacking objects:  16% (4/24)
+Unpacking objects:  20% (5/24)
+Unpacking objects:  25% (6/24)
+Unpacking objects:  29% (7/24)
+Unpacking objects:  33% (8/24)
+Unpacking objects:  37% (9/24)
+Unpacking objects:  41% (10/24)
+Unpacking objects:  45% (11/24)
+Unpacking objects:  50% (12/24)
+Unpacking objects:  54% (13/24)
+Unpacking objects:  58% (14/24)
+Unpacking objects:  62% (15/24)
+Unpacking objects:  66% (16/24)
+Unpacking objects:  70% (17/24)
+Unpacking objects:  75% (18/24)
+Unpacking objects:  79% (19/24)
+Unpacking objects:  83% (20/24)
+Unpacking objects:  87% (21/24)
+Unpacking objects:  91% (22/24)
+Unpacking objects:  95% (23/24)
+Unpacking objects: 100% (24/24)
+Unpacking objects: 100% (24/24), done.
 
-travis_time:end:0a96b2d0:start=1530334262692495677,finish=1530334264403051677,duration=1710556000
+travis_time:end:05878fb8:start=1530388151583037872,finish=1530388151888650816,duration=305612944
 [0K$ cd chadwithuhc/json-parser-code-challenge
-travis_time:start:0c9dca31
-[0K$ git fetch origin +refs/pull/1/merge:
-remote: Counting objects: 17, done.[K
-remote: Compressing objects:   9% (1/11)   [K
-remote: Compressing objects:  18% (2/11)   [K
-remote: Compressing objects:  27% (3/11)   [K
-remote: Compressing objects:  36% (4/11)   [K
-remote: Compressing objects:  45% (5/11)   [K
-remote: Compressing objects:  54% (6/11)   [K
-remote: Compressing objects:  63% (7/11)   [K
-remote: Compressing objects:  72% (8/11)   [K
-remote: Compressing objects:  81% (9/11)   [K
-remote: Compressing objects:  90% (10/11)   [K
-remote: Compressing objects: 100% (11/11)   [K
-remote: Compressing objects: 100% (11/11), done.[K
-remote: Total 17 (delta 9), reused 13 (delta 6), pack-reused 0[K
-Unpacking objects:   5% (1/17)
-Unpacking objects:  11% (2/17)
-Unpacking objects:  17% (3/17)
-Unpacking objects:  23% (4/17)
-Unpacking objects:  29% (5/17)
-Unpacking objects:  35% (6/17)
-Unpacking objects:  41% (7/17)
-Unpacking objects:  47% (8/17)
-Unpacking objects:  52% (9/17)
-Unpacking objects:  58% (10/17)
-Unpacking objects:  64% (11/17)
-Unpacking objects:  70% (12/17)
-Unpacking objects:  76% (13/17)
-Unpacking objects:  82% (14/17)
-Unpacking objects:  88% (15/17)
-Unpacking objects:  94% (16/17)
-Unpacking objects: 100% (17/17)
-Unpacking objects: 100% (17/17), done.
-From https://github.com/chadwithuhc/json-parser-code-challenge
- * branch            refs/pull/1/merge -> FETCH_HEAD
-
-travis_time:end:0c9dca31:start=1530334264409140380,finish=1530334265274369280,duration=865228900
-[0K$ git checkout -qf FETCH_HEAD
+$ git checkout -qf e05c7240a5321e41ea39db5759f3552536dc0ffa
 travis_fold:end:git.checkout
 [0K$ export PATH=./node_modules/.bin:$PATH
 [33;1mUpdating nvm[0m
 travis_fold:start:nvm.install
-[0Ktravis_time:start:0cdce291
+[0Ktravis_time:start:089fa70e
 [0K$ nvm install 10
 Downloading and installing node v10.5.0...
 Downloading https://nodejs.org/dist/v10.5.0/node-v10.5.0-linux-x64.tar.xz...
@@ -506,7 +471,7 @@ Computing checksum with sha256sum
 Checksums matched!
 Now using node v10.5.0 (npm v6.1.0)
 
-travis_time:end:0cdce291:start=1530334265908949345,finish=1530334269198106468,duration=3289157123
+travis_time:end:089fa70e:start=1530388152401135414,finish=1530388155182702649,duration=2781567235
 [0Ktravis_fold:end:nvm.install
 [0K$ node --version
 v10.5.0
@@ -515,17 +480,17 @@ $ npm --version
 $ nvm --version
 0.33.11
 travis_fold:start:install.npm
-[0Ktravis_time:start:053bdb60
+[0Ktravis_time:start:1f41a0f4
 [0K$ npm install
 [37;40mnpm[0m [0m[34;40mnotice[0m[35m[0m created a lockfile as package-lock.json. You should commit this file.
 [0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m json-parser@1.0.0 No repository field.
 [0m
-added 31 packages from 455 contributors and audited 39 packages in 2.63s
+added 31 packages from 455 contributors and audited 39 packages in 1.904s
 found [92m0[0m vulnerabilities
 
 
-travis_time:end:053bdb60:start=1530334270702105047,finish=1530334273925097711,duration=3222992664
-[0Ktravis_time:start:0cee37f0
+travis_time:end:1f41a0f4:start=1530388163349138297,finish=1530388165816994172,duration=2467855875
+[0Ktravis_time:start:14dd7aa8
 [0K$ npm ls
 json-parser@1.0.0 /home/travis/build/chadwithuhc/json-parser-code-challenge
 â”œâ”€â”¬ chai@4.1.2
@@ -565,9 +530,9 @@ json-parser@1.0.0 /home/travis/build/chadwithuhc/json-parser-code-challenge
     â””â”€â”€ has-flag@3.0.0
 
 
-travis_time:end:0cee37f0:start=1530334274141816859,finish=1530334274724098343,duration=582281484
+travis_time:end:14dd7aa8:start=1530388166044060914,finish=1530388166733897514,duration=689836600
 [0Ktravis_fold:end:install.npm
-[0Ktravis_time:start:1cec8ad7
+[0Ktravis_time:start:03d669bc
 [0K$ npm test
 
 > json-parser@1.0.0 test /home/travis/build/chadwithuhc/json-parser-code-challenge
@@ -584,7 +549,7 @@ travis_time:end:0cee37f0:start=1530334274141816859,finish=1530334274724098343,du
   [31m  1) supports nested objects[0m
 
 
-[92m [0m[32m 5 passing[0m[90m (14ms)[0m
+[92m [0m[32m 5 passing[0m[90m (16ms)[0m
 [31m  1 failing[0m
 
 [0m  1) Write a JSON Parser
@@ -608,7 +573,7 @@ travis_time:end:0cee37f0:start=1530334274141816859,finish=1530334274724098343,du
 
 [37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Test failed.  See above for more details.
 [0m
-travis_time:end:1cec8ad7:start=1530334274730138230,finish=1530334275307432124,duration=577293894
+travis_time:end:03d669bc:start=1530388166739877722,finish=1530388167314561719,duration=574683997
 [0K
 [31;1mThe command "npm test" exited with 1.[0m
 
