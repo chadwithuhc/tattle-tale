@@ -2,6 +2,8 @@
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that calls you out when you break the build
 
+![Build Status](https://travis-ci.org/chadwithuhc/tattle-tale.svg?branch=master)
+
 ## Demo
 
 A demo of the bots comment can be seen on [this PR](https://github.com/chadwithuhc/json-parser-code-challenge/pull/5)
